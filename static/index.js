@@ -1,5 +1,5 @@
 
-
+//webrtc建立连接流程：https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Connectivity
 
 const localVideoElm = document.getElementById("local-video");
 var localStream = null;

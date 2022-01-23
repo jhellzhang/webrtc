@@ -9,7 +9,7 @@
     <div class="top">
         <h1 class="text">张智辉的主页</h1>
     </div>
-    
+
     <div class="sidebar">
         <div>
             <img src="./static/images/jhell.ico" alt="LOGO" />
@@ -24,6 +24,45 @@
         </div>
     </div>
     <p style="text-align: center;">欢迎来到我的网站，在这可以完成好友聊天视频，免费下载音乐，交流摄影技巧！</p>
+    <div class="dowebok">
+        <p style="text-align: center;">请先登录</p>
+        <div class="form-item">
+            <input id='username' type="text" value='' autocomplete="off" placeholder="用户名">
+        </div>
+        <div class="form-item">
+            <input id="password" type='password' value='' autocomplete='off' placeholder="密码">
+        </div>
+        <div class="form-item">
+            <button id='submit' onclick="validatalogin()">登陆</button>
+        </div>
+        <div class="reg-bar">
+            <a class="reg" href="./static/login/login.js">立即注册</a>
+        </div>
+    </div>
+    <script>
+        function validatalogin() {
+            var sUserName = document.getElementById('username').value;
+            var sPassword = document.getElementById('password').value;
+            if (sUserName == "") {
+                alert("请输入用户名!");
+                return false;
+            }else{
+                console.log('username:',sUserName)
+            }
+
+            if (sPassword == "") {
+                alert("请输入密码!");
+                return false;
+            }else{
+                console.log('password:',sPassword)
+            }
+
+        }
+
+    </script>
+
+
+
 </body>
 
 </html>
