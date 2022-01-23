@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>webrtc</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+</head>
+
+<body>
+    <div class="top">
+        <h1 class="text">张智辉的主页</h1>
+    </div>
+    
+    <div class="sidebar">
+        <div>
+            <img src="./static/images/jhell.ico" alt="LOGO" />
+            <nav>
+                <ul class="nav">
+                    <li><a href="https://jhell.cn">Home</a></li>
+                    <li><a href="https://jhell.cn/webrtc">Webrtc</a></li>
+                    <li><a href="https://jhell.cn/music">Music</a></li>
+                    <li><a href="https://jhell.cn/photo">Photo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <div id="container" style="background-color: darkcyan;">
+            <!--音乐播放模块-->
+            <h3 id="musicName">牧马城市</h3>
+            <audio src="./static/music/city.mp3" id="audio"></audio>
+            <button type="button" id="play" class="btn btn-primary glyphicon glyphicon-play-circle button">play</button>
+            <button type="button" id="pause" class="btn btn-primary glyphicon glyphicon-pause button">stop</button>
+        </div>
+
+    </div>
+    
+    <script src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="//cdn.bootcdn.net/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <script src="./static/index.js"></script>
+    <script src="./static/music_play.js"></script>
+</body>
+
+</html>

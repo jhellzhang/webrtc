@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>webrtc</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <script src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="//cdn.bootcdn.net/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <link rel="shortcut icon" href="#" />
+</head>
+
+<body>
+    <div class="top">
+        <h1 class="text">张智辉的主页</h1>
+    </div>
+
+    <div class="sidebar">
+        <div>
+            <img src="./static/images/jhell.jpg " alt="LOGO" />
+            <nav>
+                <ul class="nav">
+                    <li><a href="https://jhell.cn">Home</a></li>
+                    <li><a href="https://jhell.cn/webrtc">Webrtc</a></li>
+                    <li><a href="https://jhell.cn/music">Music</a></li>
+                    <li><a href="https://jhell.cn/photo">Photo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="body">
+        <div class="video">
+            <video id="local-video" width="320" height="240" autoplay></video>
+            <div id="videos"></div>
+        </div>
+        <div class="message">
+            <div id="user">
+                <li id="user-id">用户名称</li>
+                <li>远端ID：</li>
+                <ul id="user-list">
+
+                </ul>
+            </div>
+            <!-- 聊天模块-->
+            <div class="talk_con" id="talk_con_id" style="background-color: cadetblue;">
+                <div class="talk_show" id="words">
+                    <div class="atalk"><span id="easy">欢迎进入聊天室</span></div>
+                </div>
+                <div class="talk_input" id="talk_input_id">
+                    <form>
+                        <input type="text" class="talk_word" id="send" />
+                    <button class="talk_sub">send</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./static/index.js"></script>
+    <!-- <script>
+
+
+    </script> -->
+</body>
+
+</html>
