@@ -42,7 +42,7 @@
         </div>
     </div>
     <p style="text-align: center;">欢迎来到我的网站，在这可以完成好友聊天视频，免费下载音乐，交流摄影技巧！</p>
-    <p style="text-align: center;">请先登录</p>
+    <p1 style="text-align: center;">欢迎登录</p1>
     <script>
         function validatalogin() {
             var sUserName = document.getElementById('username').value;
@@ -60,24 +60,6 @@
             }else{
                 console.log('password:',sPassword)
             }
-            window.location.href="./index_login.html"
-            // $.post("https://jhell.cn/login",
-            // //发送给后端的数据
-            // {
-            //     "userName": sUserName,
-            //     "password": sPassword
-            // },
-            // //回调函数
-            // function (result) {
-            //     if (!result.success) {
-            //         $("#errormessage").text("用户名或密码错误");
-            //     } else if (result.success) {
-            //         alert("登录成功");
-            //         // 跳到index.html页面
-            //         window.location.href="index_login.html" ;
-            //     }
-            // }
-        )
 
         }
 
