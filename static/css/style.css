@@ -1,8 +1,8 @@
 /* 设置class属性 */
 .sidebar{
     float: left;
-    width: 10%;
-    height: 300px;
+    width: 15%;
+    height: 600px;
     background-color: #2c3e50;
 }
 .body{
@@ -101,15 +101,16 @@ a:hover, a:active
 }
 
 /* 登陆框 */
+.log {width: 300px; height: 300px;float: left ;}
 .dowebok { width: 300px; height: 300px;float: right ; background-color: #3495f5; overflow: hidden;}
-.form-item { position: relative; width: 360px; margin: 0 auto; padding-bottom: 30px;}
+.form-item { position: relative; top: auto; width: 360px; margin: 0 auto; padding-bottom: 10px;}
 /* .form-item input { width: 288px; height: 48px; padding-left: 70px; border: 1px solid #fff; border-radius: 25px; font-size: 18px; color: #fff; background-color: transparent; outline: none;} */
 /* .form-item button { width: 360px; height: 50px; border: 0; border-radius: 25px; font-size: 18px; color: #1f6f4a; outline: none; cursor: pointer; background-color: #fff; } */
 /* 设置id属性 */
 /* #username { background: url(img/emil.png) 20px 14px no-repeat; } */
 /* #password { background: url(img/password.png) 23px 11px no-repeat; } */
-.reg-bar { width: 360px; font-size: 14px;}
-.reg-bar a { color: rgb(241, 13, 13); }
+/* .reg-bar { width: 360px; font-size: 14px;}
+.reg-bar a { color: rgb(241, 13, 13); } */
 
 /* .dowebok ::-webkit-input-placeholder { font-size: 18px; line-height: 1.4; color: #fff;}
 .dowebok :-moz-placeholder { font-size: 18px; line-height: 1.4; color: #fff;}
