@@ -1,3 +1,4 @@
+
 const express = require("express");
 const fs = require("fs");
 var app = require("express")();
@@ -8,6 +9,16 @@ let sslOptions = {
 };
 const https = require("https").createServer(sslOptions, app);
 var io = require("socket.io")(https);
+//连接sql
+// var sql = require('mysql');
+// var connection = sql.createConnection({
+//     host:'localhost',
+//     user:'root',
+//     password:'',
+//     database:'login'
+// });
+// connection.connect();
+
 
 https.listen(3000, () => {
     console.log("listening on 3000");
@@ -58,6 +69,20 @@ io.on("connect", (socket => {
         socket.to(data.to).emit("ice candidates", { candidate: data.candidate, sender: data.sender });
 
     });
+    // //sql 相关
+    // socket.on("sql request",(data)=>{
+    //     if (data.sql_type=='add'){
+    //         sql_request = 'insert into login username='+data.username +' and password='+data.password+';';
+    //         connection.query(sql_request,function(error,results, fields){
+    //             if(error) throw error;
+
+    //         });
+    //     } else if (data.sql_type == 'login'){
+    //         sql_request = 'select * from username = ' + data.username +' and password='+ data.password +';';
+    //         connection.query()
+    //     }
+
+    // });
 }))
 // http.listen(3000,()=>{
 //     console.log("listening on 3000");
