@@ -36,6 +36,9 @@ app.get('/webrtc', (req, res) => {
 app.get('/photo', (req, res) => {
     res.sendFile(__dirname + '/photo.html')
 })
+app.get('/video', (req, res) => {
+    res.sendFile(__dirname + '/video.html')
+})
 app.get('/static', (req, res) => {
     res.readdir(__dirname + '/static');
 })

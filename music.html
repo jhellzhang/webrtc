@@ -19,6 +19,7 @@
                     <li><a href="https://jhell.cn/webrtc">Webrtc</a></li>
                     <li><a href="https://jhell.cn/music">Music</a></li>
                     <li><a href="https://jhell.cn/photo">Photo</a></li>
+                    <li><a href="https://jhell.cn/video">Video</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,7 +27,18 @@
     <div>
         <div id="container" style="background-color: darkcyan;">
             <!--音乐播放模块-->
-            <h3 id="musicName">牧马城市</h3>
+
+            <h3 id="musicName">音乐列表</h3>
+            <select id="music_name">
+                <option value="回忆.mp3">回忆</option>
+                <option value="冒险.mp3">冒险</option>
+                <option value="说好的幸福呢.m4a">说好的幸福呢</option>
+                <option value="再次.mp3">再次</option>
+                <option value="yukinohana.mp3">yukinohana</option>
+                <option value="believe.mp3">believe</option>
+                <option value="city.mp3">city</option>
+            </select>
+            
             <audio src="./static/music/city.mp3" id="audio"></audio>
             <button type="button" id="play" class="btn btn-primary glyphicon glyphicon-play-circle button">play</button>
             <button type="button" id="pause" class="btn btn-primary glyphicon glyphicon-pause button">stop</button>
@@ -36,7 +48,6 @@
     
     <script src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="//cdn.bootcdn.net/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
-    <script src="./static/index.js"></script>
     <script src="./static/music_play.js"></script>
 </body>
 
